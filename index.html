@@ -4,22 +4,370 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Repo</title>
+  <title>Умка</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
-    Header
+    <div class="logo">
+      <img src="img/images/logo.png" alt="Logo">
+    </div>
+    <nav class="menu">
+      <button type="button" class="menu__btn"></button>
+      <ul class="menu__list">
+        <li class="menu__item menu__item--active">
+          <a href="#" class="menu__link">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">История умки</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Занятия</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Наш коллектив</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Новости</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Галерея</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   
   <main>
-    Main
+    <section class="promo">
+      <div class="wrapper">
+        <p class="promo__top">Добро пожаловать!</p>
+        <p class="promo__subtitle"><span>Растем, играем</span>и развиваемся вместе</p>
+        <p class="promo__title">Частный детский сад “Умка”</p>
+        <a href="#" class="promo__btn">ЗАПИСАТЬСЯ НА БЕСПЛАТНУЮ ЭКСКУРСИЮ</a>
+      </div>
+    </section>
+    
+    <section class="info">
+      <div class="wrapper">
+        <div class="info__text">
+          <p class="info__title">С Чего Все Началось ?</p>
+          <p>В свое время мы столкнулись с тем, что надо было выходить на работу, а очередь в детский сад еще не подошла. Просидев еще год до 3-х лет, мы попали в сад, который был далеко от дома. Ребенок долго привыкал к саду. Так как в группе было 30 человек, было очень шумно, к чему ребенок был абсолютно не привыкший.<br>И вот в тот самый момент, у нас возникло желание открыть частный детский сад. В котором будет маленькое количество детей, и воспитатель сможет уделить достаточно времени на уход и развитие каждого ребенка.</p>
+          <p>“Лучший способ сделать детей хорошими - это сделать их счастливыми.” (С) Оскар Уайльд.</p>
+        </div>
+        <figure class="info__img">
+          <img src="img/images/img-1.png" alt="Частный детский сад">
+        </figure>
+      </div>
+    </section>
+    
+    <section class="lessons">
+      <div class="wrapper">
+        <p class="lessons__title">ЧТО МЫ ПРЕДЛАГАЕМ?</p>
+        
+      </div>
+    </section>
+    
+    <section class="review">
+      <div class="wrapper">
+        <div class="swiper-container review__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide review__slide">
+              <div class="review__text">
+                <p>“Еще до самого открытия садика,только пообщавщись лично с основателями , уже было принято решение доверить наших детей именно им ,видно,что люди делают свое дело ради детей, а не личной выгоды!”</p>
+              </div>
+              <p class="review__name">Василиса Иванова (мама Катеньки) , 2 октября 2019</p>
+            </div>
+            <div class="swiper-slide review__slide">
+              <div class="review__text">
+                <p>“Еще до самого открытия садика,только пообщавщись лично с основателями , уже было принято решение доверить наших детей именно им ,видно,что люди делают свое дело ради детей, а не личной выгоды!”</p>
+              </div>
+              <p class="review__name">Василиса Иванова (мама Катеньки) , 2 октября 2019</p>
+            </div>
+            <div class="swiper-slide review__slide">
+              <div class="review__text">
+                <p>“Еще до самого открытия садика,только пообщавщись лично с основателями , уже было принято решение доверить наших детей именно им ,видно,что люди делают свое дело ради детей, а не личной выгоды!”</p>
+              </div>
+              <p class="review__name">Василиса Иванова (мама Катеньки) , 2 октября 2019</p>
+            </div>
+            <div class="swiper-slide review__slide">
+              <div class="review__text">
+                <p>“Еще до самого открытия садика,только пообщавщись лично с основателями , уже было принято решение доверить наших детей именно им ,видно,что люди делают свое дело ради детей, а не личной выгоды!”</p>
+              </div>
+              <p class="review__name">Василиса Иванова (мама Катеньки) , 2 октября 2019</p>
+            </div>
+            <div class="swiper-slide review__slide">
+              <div class="review__text">
+                <p>“Еще до самого открытия садика,только пообщавщись лично с основателями , уже было принято решение доверить наших детей именно им ,видно,что люди делают свое дело ради детей, а не личной выгоды!”</p>
+              </div>
+              <p class="review__name">Василиса Иванова (мама Катеньки) , 2 октября 2019</p>
+            </div>
+          </div>
+          <div class="swiper-pagination review__pagination"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="benefits">
+      <div class="wrapper">
+        <p class="benefits__title">ПОЧЕМУ МЫ?</p>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/groceries.png" alt="Здоровое питание">
+            </figure>
+            <p class="benefits__subtitle">Здоровое питание</p>
+            <p>В Умке ваши дети получат, не только здоровое питание, но и вкусное, обогащенное всеми нужными витаминами, что так необходимо для развития здоровых и крепких детей</p>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/photo-camera.png" alt="Онлайн трансляция">
+            </figure>
+            <p class="benefits__subtitle">Онлайн трансляция</p>
+            <p>В саду ведется видеонаблюдение, благодаря чему, родители имеют возможноть наблюдать, как развивается его ребенок во время занятий в режиме online</p>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/skill.png" alt="Экспертный подход">
+            </figure>
+            <p class="benefits__subtitle">Экспертный подход</p>
+            <p>Умка - место, где каждый ребенок чувствует, что его любят и принимают. Мы стараемся максимально учитывать интересы и особенности ребенка, предоставляя такую среду, в которой он смог бы реализовать тот потенциал, который в нем заложен</p>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__icon">
+              <img src="img/icons/armchair.png" alt="Комфорт">
+            </figure>
+            <p class="benefits__subtitle">Комфорт</p>
+            <p>В нашем доме просторно, уютно и светло, отдельные комнаты для каждой группы и для индивидуальных занятий, отдельная спальня, раздевалка с шкафчиками для каждого ребенка, а также каждый день у нас влажная уборка и проветривание помещений</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="team">
+      <div class="wrapper">
+        <p class="team__title">НАШ КОЛЛЕКТИВ!</p>
+        <div class="swiper-container team__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide team__slide">
+              <div class="team__pic">
+                <figure class="team__img">
+                  <img src="img/images/img-2.jpg" alt="Пашина Екатерина">
+                </figure>
+              </div>
+              <p class="team__name">Пашина Екатерина</p>
+              <p class="team__position">Преподаватель</p>
+              <p>Описание преподавателя его биография и .т .д</p>
+            </div>
+            <div class="swiper-slide team__slide">
+              <div class="team__pic">
+                <figure class="team__img">
+                  <img src="img/images/img-3.jpg" alt="Пашина Екатерина">
+                </figure>
+              </div>
+              <p class="team__name">Пашина Екатерина</p>
+              <p class="team__position">Преподаватель</p>
+              <p>Описание преподавателя его биография и .т .д</p>
+            </div>
+            <div class="swiper-slide team__slide">
+              <div class="team__pic">
+                <figure class="team__img">
+                  <img src="img/images/img-4.jpg" alt="Пашина Екатерина">
+                </figure>
+              </div>
+              <p class="team__name">Пашина Екатерина</p>
+              <p class="team__position">Преподаватель</p>
+              <p>Описание преподавателя его биография и .т .д</p>
+            </div>
+          </div>
+          <div class="swiper-button-prev slider__prev"></div>
+          <div class="swiper-button-next slider__next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="docs">
+      <div class="wrapper">
+        <p class="docs__title">Требуемые<span>Документы</span>Для поступления в детский сад</p>
+        <ul class="docs__list">
+          <li class="docs__item">
+            <figure class="docs__icon">
+              <img src="img/icons/passport.png" alt="Паспорт">
+            </figure>
+            <p class="docs__subtitle">Паспорт</p>
+            <p class="docs__text">Копия пасспорта одного из родителей (законного представителя ребенка)</p>
+          </li>
+          <li class="docs__item">
+            <figure class="docs__icon">
+              <img src="img/icons/file.png" alt="Документы">
+            </figure>
+            <p class="docs__subtitle">Документы</p>
+            <p class="docs__text">Свидетельство о рождении ребенка (копия)</p>
+          </li>
+          <li class="docs__item">
+            <figure class="docs__icon">
+              <img src="img/icons/history.png" alt="Анализы">
+            </figure>
+            <p class="docs__subtitle">Анализы</p>
+            <p class="docs__text">Анализ на энтеробиоз (действителен 3 месяца)</p>
+          </li>
+          <li class="docs__item">
+            <figure class="docs__icon">
+              <img src="img/icons/pencil.png" alt="Справка">
+            </figure>
+            <p class="docs__subtitle">Справка</p>
+            <p class="docs__text">Справка от педиатора о том, что ребенок допущен к посещению детского учереждения</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="news">
+      <div class="wrapper">
+        <p class="news__title">НОВОСТИ</p>
+        <div class="news__block">
+          <figure class="news__img">
+            <img src="img/images/img-5.jpg" alt="НОВОСТИ">
+          </figure>
+          <div class="news__info">
+            <p class="news__subtitle">Официальное открытие!</p>
+            <p>01.01.2001 числа намечается официальное открытие детского сада УМКА . Будут проводится множество мастер-классов по рукоделию, ритмике и.т.д. Ждем вас в гости!</p>
+          </div>
+        </div>
+        <ul class="news__list">
+          <li class="news__item">
+            <p class="news__title-2">Новый год</p>
+            <p>Новый год-это праздник для всей семье, поэтому приглашаем вас к нам в умку, для ...</p>
+          </li>
+          <li class="news__item">
+            <p class="news__title-2">Новый год</p>
+            <p>Новый год-это праздник для всей семье, поэтому приглашаем вас к нам в умку, для ...</p>
+          </li>
+          <li class="news__item">
+            <p class="news__title-2">Новый год</p>
+            <p>Новый год-это праздник для всей семье, поэтому приглашаем вас к нам в умку, для ...</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="gallery">
+      <div class="wrapper">
+        <p class="gallery__title">ФОТОГАЛЕРЕЯ</p>
+        <div class="gallery__wrap">
+          <div class="gallery__left">
+            <a data-fancybox="gallery" href="img/images/img-6.jpg" class="gallery__img">
+              <img src="img/images/img-6.jpg" alt="ФОТОГАЛЕРЕЯ">
+            </a>
+            <a data-fancybox="gallery" href="img/images/img-7.jpg" class="gallery__img gallery__img--big">
+              <img src="img/images/img-7.jpg" alt="ФОТОГАЛЕРЕЯ">
+            </a>
+            <a data-fancybox="gallery" href="img/images/img-8.jpg" class="gallery__img gallery__img--big">
+              <img src="img/images/img-8.jpg" alt="ФОТОГАЛЕРЕЯ">
+            </a>
+            <a data-fancybox="gallery" href="img/images/img-9.jpg" class="gallery__img">
+              <img src="img/images/img-9.jpg" alt="ФОТОГАЛЕРЕЯ">
+            </a>
+          </div>
+          <a data-fancybox="gallery" href="img/images/img-10.jpg" class="gallery__img gallery__img--right">
+            <img src="img/images/img-10.jpg" alt="ФОТОГАЛЕРЕЯ">
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="order">
+      <div class="wrapper">
+        <p class="order__title">ЗАПИШИТЕСЬ НА БЕСПЛАТНУЮ ЭКСКУРСИЮ</p>
+        <div class="order__wrap">
+          <form action="#" class="order__form">
+            <input type="text" class="order__input" placeholder="Имя">
+            <input type="email" class="order__input" placeholder="email">
+            <textarea class="order__message" placeholder="Сообщение"></textarea>
+            <input type="checkbox" id="checkbox" class="order__checkbox" checked>
+            <label for="checkbox" class="order__label">Я не робот</label>
+            <button type="submit" class="order__btn">отправить</button>
+          </form>
+          <div class="order__map">
+            <address>Ивантеевка, улица Первомайская, д. 19</address>
+            <div class="order__frame">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   
   <footer class="footer">
-    Footer
+    <div class="wrapper footer__wrap">
+      <div class="footer__block">
+        <p class="footer__title">Наш адресс:</p>
+        <address>Россия, Московская область, г. Ивантеевка, ул. Первомайская, д.19</address>
+      </div>
+      <div class="footer__block">
+        <p class="footer__title">Контакты:</p>
+        <p>E-mail: <a href="mailto:Olesya0307@yandex.ru">Olesya0307@yandex.ru</a></p>
+        <p>Phone: <a href="tel:89030114646">89030114646</a></p>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--in" title="Instagram"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk" title="VKontakte"></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">История умки</a></li>
+        <li><a href="#">Занятия</a></li>
+        <li><a href="#">Наш коллектив</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Галлерея</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
   </footer>
   
+  <ul class="btns">
+    <li class="btns__item">
+      <a href="tel:89030114646" class="btns__link btns__link--phone"><span>8-903-011-4646</span></a>
+    </li>
+    <li class="btns__item">
+      <a href="#" class="btns__link btns__link--insta"><span>@umka</span></a>
+    </li>
+  </ul>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  
+  <!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.team__slider', {
+      navigation: {
+        nextEl: '.team__next',
+        prevEl: '.team__prev',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 3,
+      spaceBetween: 20,
+    });
+    
+    var mySwiper = new Swiper ('.review__slider', {
+      pagination: {
+        el: '.review__pagination',
+        clickable: true,
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+  </script>
 </body>
 </html>
