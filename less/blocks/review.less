@@ -1,0 +1,61 @@
+.review {
+  padding-top: 140px;
+  padding-bottom: 70px;
+  background-image: url(../img/icons/talk.png);
+  background-repeat: no-repeat;
+  background-position: top 60px center;
+  background-size: 56px 65px;
+}
+
+.review__slider {
+  width: 540px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.review__text {
+  font-family: "Myriad Pro Condenced", "Arial", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+
+.review__name {
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 102px;
+    height: 3px;
+    background-color: rgb(237, 6, 6);
+  }
+}
+
+.review__pagination {
+  bottom: 0 !important;
+  
+  .swiper-pagination-bullet {
+    opacity: 1;
+    width: 21px;
+    height: 19px;
+    background-image: url(../img/icons/heart-empty.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(255,255,255,0);
+    border-radius: 0;
+    outline: none;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-image: url(../img/icons/heart.png);
+  }
+}
