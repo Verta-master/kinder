@@ -52,8 +52,10 @@ function onScroll(event){
       var currLink = $(this);
       var refElement = $(currLink.attr("href"));
       if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-          $('.menu__link').removeClass("menu__link--active");
-          currLink.addClass("menu__link--active");
+          $('.menu__item').each(function () {
+            $(this).removeClass('menu__item--active');
+          })
+          currLink.parent().addClass("menu__item--active");
       }
   });
 };

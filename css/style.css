@@ -648,6 +648,7 @@ button {
   letter-spacing: 0.01em;
   font-weight: 700;
   line-height: 1;
+  text-align: center;
 }
 .promo {
   padding-top: 230px;
@@ -762,7 +763,7 @@ button {
 }
 .lessons {
   padding-top: 50px;
-  padding-bottom: 110px;
+  padding-bottom: 30px;
   text-align: center;
   font-weight: 700;
   background-color: #8587e6;
@@ -860,6 +861,7 @@ button {
           justify-content: flex-start;
   padding: 30px;
   padding-top: 80px;
+  margin-bottom: 80px;
   text-align: left;
   border-radius: 40px;
   background-color: #ffffff;
@@ -1804,4 +1806,313 @@ button {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+  .menu {
+    margin-right: 0;
+  }
+  .menu__item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .info__text,
+  .info__title {
+    padding-left: 0;
+    max-width: 600px;
+  }
+  .lessons__name {
+    width: 45%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .lessons__name a {
+    width: 100%;
+    font-size: 24px;
+  }
+  .lessons__names {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .benefits__item {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .order__wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer__wrap {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 1022px) {
+  .menu__btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/icon-menu-ham.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 19px;
+  }
+  .menu--opened .menu__btn {
+    background-image: url(../img/icons/icon-menu-cross.svg);
+    background-size: 24px 24px;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: auto;
+    background-color: #fff;
+  }
+  .menu__item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .menu__item:hover,
+  .menu__item:active,
+  .menu__item--active {
+    background-color: #16cbe4;
+  }
+  .menu__item::before {
+    display: none;
+  }
+  .menu__link {
+    padding: 15px;
+  }
+  .header__wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .logo img {
+    width: 70px;
+    height: auto;
+  }
+  .promo {
+    padding-top: 100px;
+  }
+  .promo__text {
+    padding: 0;
+  }
+  .promo__wrap::before {
+    left: 0;
+    height: 300px;
+  }
+  .info__text,
+  .info__title {
+    max-width: 100%;
+  }
+  .info__img {
+    position: static;
+    text-align: center;
+  }
+  .info__wrap {
+    padding-bottom: 45px;
+  }
+  .benefits__title,
+  .lessons__title {
+    font-size: 48px;
+  }
+  .lessons__names {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .lessons__name {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .benefits__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .benefits__item {
+    margin-bottom: 20px;
+  }
+  .benefits__icon::before {
+    width: 166px;
+    height: 166px;
+  }
+  .gallery__title span::after,
+  .team__title::before {
+    display: none;
+  }
+  .docs {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  .news__block {
+    padding: 20px;
+  }
+  .news__img {
+    width: 50%;
+  }
+  .news__info {
+    width: 50%;
+    padding-left: 20px;
+  }
+  .gallery {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .gallery__wrap {
+    padding: 0;
+  }
+  .gallery__img--big,
+  .gallery__img {
+    width: 49%;
+  }
+  .gallery__img--right {
+    width: 30%;
+  }
+  .gallery__left {
+    width: 69%;
+  }
+  .order__wrap {
+    display: block;
+  }
+  .order__form {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+  }
+  .order__map {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__menu,
+  .footer__block {
+    width: 30%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
+@media (max-width: 766px) {
+  .news__item,
+  .footer__menu,
+  .footer__block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .news__list,
+  .footer__wrap {
+    display: block;
+  }
+  .benefits__title,
+  .lessons__title,
+  .team__title,
+  .news__title,
+  .gallery__title {
+    font-size: 30px;
+  }
+  .news__item {
+    min-height: auto;
+  }
+  .docs__title {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    margin: 0 auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+  .docs__title::before {
+    display: none;
+  }
+  .docs__list {
+    max-width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .docs__item {
+    max-width: 100%;
+  }
+  .team__pic {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lessons__name {
+    width: 100%;
+  }
+  .promo__btn {
+    max-width: 100%;
+    margin-top: 60px;
+  }
+  .promo__wrap {
+    padding-bottom: 280px;
+  }
+}
+@media (max-width: 320px) {
+  .promo__subtitle {
+    font-size: 30px;
+  }
+  .promo__subtitle span {
+    font-size: 36px;
+  }
+  .promo__title {
+    font-size: 48px;
+  }
+  .promo__btn {
+    line-height: 1.2;
+  }
+  .info__title {
+    font-size: 40px;
+  }
+  .docs__title {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .news__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news__img,
+  .news__info {
+    width: 100%;
+    padding-left: 0;
+  }
+  .gallery__wrap {
+    display: block;
+  }
+  .gallery__img,
+  .gallery__img--big,
+  .gallery__img--right,
+  .gallery__left {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .gallery__img:nth-last-child(2) {
+    margin-bottom: 10px;
+  }
+  .order__map address {
+    top: -45px;
+  }
+  .order__map address::before {
+    top: 2px;
+  }
 }
