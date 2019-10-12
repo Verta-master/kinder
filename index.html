@@ -154,7 +154,7 @@
     </section>
     
     <section class="team">
-      <div class="wrapper">
+      <div class="wrapper team__wrap">
         <p class="team__title">НАШ КОЛЛЕКТИВ!</p>
         <div class="swiper-container team__slider">
           <div class="swiper-wrapper">
@@ -189,9 +189,9 @@
               <p>Описание преподавателя его биография и .т .д</p>
             </div>
           </div>
-          <div class="swiper-button-prev slider__prev"></div>
-          <div class="swiper-button-next slider__next"></div>
         </div>
+        <div class="swiper-button-prev team__prev"></div>
+        <div class="swiper-button-next team__next"></div>
       </div>
     </section>
     
@@ -363,6 +363,8 @@
       preventClicksPropagation: false,
       slidesPerView: 3,
       spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
     });
     
     var mySwiper = new Swiper ('.review__slider', {
