@@ -20,3 +20,66 @@
     .transition();
   }
 }
+
+.btns {
+  .reset();
+  list-style: none;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 20px 0 0 20px;
+}
+
+.btns__item {
+  position: relative;
+  z-index: 10;
+  
+  &:hover {
+    .btns__link span {
+      right: 100%;
+      .transition();
+    }
+  }
+}
+
+.btns__link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(235, 235, 235);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  &--phone {
+    background-image: url(../img/icons/smartphone.svg);
+    background-size: 48px 48px;
+  }
+  
+  &--insta {
+    background-image: url(../img/icons/instagram.svg);
+    background-size: 40px 40px;
+  }
+  
+  span {
+    position: absolute;
+    z-index: -1;
+    right: -500px;
+    display: block;
+    min-width: 160px;
+    padding: 15px 10px;
+    color: #16cbe4;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 0 0 10px;
+//    .transition();
+    
+    &:hover {
+      color: #010101;
+    }
+  }
+}

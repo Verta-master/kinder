@@ -1,0 +1,34 @@
+.social {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 10px;
+}
+
+.social__link {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  &--in {
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/icons/instagram-2.svg);
+  }
+  
+  &--vk {
+    width: 39px;
+    height: 39px;
+    background-image: url(../img/icons/vk.svg);
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+}
