@@ -492,6 +492,7 @@ button {
   padding: 0;
   list-style: none;
   position: fixed;
+  z-index: 100;
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
@@ -2061,7 +2062,7 @@ button {
     padding-bottom: 280px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .promo__subtitle {
     font-size: 30px;
   }
@@ -2114,5 +2115,11 @@ button {
   }
   .order__map address::before {
     top: 2px;
+  }
+  .btns {
+    -webkit-transform: none;
+            transform: none;
+    bottom: 0;
+    top: auto;
   }
 }
