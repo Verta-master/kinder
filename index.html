@@ -20,25 +20,25 @@
         <button type="button" class="menu__btn"></button>
         <ul class="menu__list">
           <li class="menu__item menu__item--active">
-            <a href="#" class="menu__link">Главная</a>
+            <a href="#top" class="menu__link">Главная</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">История умки</a>
+            <a href="#history" class="menu__link">История умки</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Занятия</a>
+            <a href="#lessons" class="menu__link">Занятия</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Наш коллектив</a>
+            <a href="#team" class="menu__link">Наш коллектив</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Новости</a>
+            <a href="#news" class="menu__link">Новости</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Галерея</a>
+            <a href="#gallery" class="menu__link">Галерея</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Контакты</a>
+            <a href="#contacts" class="menu__link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +46,7 @@
   </header>
   
   <main>
-    <section class="promo">
+    <section class="promo" id="top">
       <div class="wrapper promo__wrap">
         <div class="promo__text">
           <p class="promo__top">Добро пожаловать!</p>
@@ -57,7 +57,7 @@
       </div>
     </section>
     
-    <section class="info">
+    <section class="info" id="history">
       <div class="wrapper info__wrap">
         <p class="info__title">С Чего Все Началось ?</p>
         <div class="info__text">
@@ -70,10 +70,77 @@
       </div>
     </section>
     
-    <section class="lessons">
+    <section class="lessons" id="lessons">
       <div class="wrapper">
         <p class="lessons__title">ЧТО МЫ ПРЕДЛАГАЕМ?</p>
-        
+        <div class="lessons__tabs" id="tabs">
+          <ul class="lessons__names">
+            <li class="lessons__name"><a href="#tabs-1">Детский сад</a></li>
+            <li class="lessons__name"><a href="#tabs-2">Дополнительные занятия</a></li>
+          </ul>
+          <div class="lessons__field" id="tabs-1">
+            <a data-fancybox data-src="#call" href="javascript:;" class="lessons__subtitle">Расписание</a>
+            <ul class="lessons__list">
+              <li class="lessons__item">
+                <figure class="lessons__icon">
+                  <img src="img/icons/books.png" alt="Расписание">
+                </figure>
+                <p class="lessons__type">Английский язык<br>2-3 года<br>4-5 лет</p>
+                <p>Групповые занятия 2 раза в неделю</p>
+                <a href="#" class="btn lessons__btn">Записаться</a>
+              </li>
+              <li class="lessons__item">
+                <figure class="lessons__icon">
+                  <img src="img/icons/dancing.png" alt="Расписание">
+                </figure>
+                <p class="lessons__type">Средняя группа<br>2-5 лет</p>
+                <p>Групповые занятия 2 раза в неделю</p>
+                <a href="#" class="btn lessons__btn">Записаться</a>
+              </li>
+              <li class="lessons__item">
+                <figure class="lessons__icon">
+                  <img src="img/icons/think.png" alt="Расписание">
+                </figure>
+                <p class="lessons__type">Творческая мастерская<br>3-5 лет</p>
+                <div class="lessons__sublist">
+                  <p>-декупаж<br>-роспись на пряниках<br>-бсиероплетение<br>-развитие мелкой маторики</p>
+                </div>
+                <a href="#" class="btn lessons__btn">Записаться</a>
+              </li>
+            </ul>
+          </div>
+          <div class="lessons__field" id="tabs-2">
+            <a data-fancybox data-src="#call" href="javascript:;" class="lessons__subtitle">Расписание</a>
+            <ul class="lessons__list">
+              <li class="lessons__item">
+                <figure class="lessons__icon">
+                  <img src="img/icons/books.png" alt="Расписание">
+                </figure>
+                <p class="lessons__type">Английский язык<br>2-3 года<br>4-5 лет</p>
+                <p>Групповые занятия 2 раза в неделю</p>
+                <a href="#" class="btn lessons__btn">Записаться</a>
+              </li>
+              <li class="lessons__item">
+                <figure class="lessons__icon">
+                  <img src="img/icons/dancing.png" alt="Расписание">
+                </figure>
+                <p class="lessons__type">Средняя группа<br>2-5 лет</p>
+                <p>Групповые занятия 2 раза в неделю</p>
+                <a href="#" class="btn lessons__btn">Записаться</a>
+              </li>
+              <li class="lessons__item">
+                <figure class="lessons__icon">
+                  <img src="img/icons/think.png" alt="Расписание">
+                </figure>
+                <p class="lessons__type">Творческая мастерская<br>3-5 лет</p>
+                <div class="lessons__sublist">
+                  <p>-декупаж<br>-роспись на пряниках<br>-бсиероплетение<br>-развитие мелкой маторики</p>
+                </div>
+                <a href="#" class="btn lessons__btn">Записаться</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     
@@ -153,7 +220,7 @@
       </div>
     </section>
     
-    <section class="team">
+    <section class="team" id="team">
       <div class="wrapper team__wrap">
         <p class="team__title">НАШ КОЛЛЕКТИВ!</p>
         <div class="swiper-container team__slider">
@@ -239,7 +306,7 @@
       </div>
     </section>
     
-    <section class="news">
+    <section class="news" id="news">
       <div class="wrapper">
         <p class="news__title">НОВОСТИ</p>
         <div class="news__block">
@@ -271,7 +338,7 @@
       </div>
     </section>
     
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="wrapper">
         <p class="gallery__title"><span>ФОТОГАЛЕРЕЯ</span></p>
         <div class="gallery__wrap">
@@ -296,7 +363,7 @@
       </div>
     </section>
     
-    <section class="order">
+    <section class="order" id="contacts">
       <div class="wrapper">
         <p class="order__title">ЗАПИШИТЕСЬ НА БЕСПЛАТНУЮ ЭКСКУРСИЮ</p>
         <div class="order__wrap">
@@ -327,8 +394,8 @@
       </div>
       <div class="footer__block">
         <p class="footer__title">Контакты:</p>
-        <p>E-mail: <a href="mailto:Olesya0307@yandex.ru">Olesya0307@yandex.ru</a></p>
-        <p>Phone: <a href="tel:89030114646">89030114646</a></p>
+        <p class="footer__contacts">E-mail: <a href="mailto:Olesya0307@yandex.ru">Olesya0307@yandex.ru</a></p>
+        <p class="footer__contacts">Phone: <a href="tel:89030114646">89030114646</a></p>
         <ul class="social">
           <li class="social__item">
             <a href="#" class="social__link social__link--in" title="Instagram"></a>
@@ -359,9 +426,17 @@
     </li>
   </ul>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">РАСПИСАНИЕ ДОПОЛНИТЕЛЬНЫХ ЗАНЯТИЙ</p>
+    
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -385,6 +460,13 @@
       },
       preventClicks: false,
       preventClicksPropagation: false,
+    });
+  </script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
     });
   </script>
 </body>
