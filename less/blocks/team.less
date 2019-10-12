@@ -1,0 +1,124 @@
+.team {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-image: linear-gradient(to bottom, #ffc14f 0%, #ffc14f 360px, #fff 360px, #fff 100%);
+}
+
+.team__wrap {
+  position: relative;
+}
+
+.team__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 70px;
+  font-family: "Arial Curive", "Arial", sans-serif;
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  color: #fff;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    width: 65px;
+    height: 73px;
+    background-image: url(../img/icons/arrow-white.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.team__slider {
+  width: 970px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  .swiper-slide-active {
+    .team__img {
+      width: 262px;
+      height: 262px;
+    }
+  }
+}
+
+.team__slide {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 700;
+  
+  p {
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team__name {
+    max-width: 100%;
+  }
+}
+
+.team__pic {
+  width: 262px;
+  height: 262px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__img {
+  width: 195px;
+  height: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: 14px solid #fff;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    max-width: none;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: 50%;
+    flex: 0 0 auto;
+  }
+}
+
+.team__name {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: "Arial Curive", "Arial", sans-serif;
+  color: #612913;
+  font-size: 30px;
+  text-align: center;
+}
+
+.team__position {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  color: #030303;
+  opacity: 0.7;
+}
+
+.team__prev,
+.team__next {
+  outline: none;
+  width: 60px;
+  height: 60px;
+  margin-top: 7px;
+  background-image: url(../img/icons/double-arrow.svg);
+  background-size: 60px 60px;
+  opacity: 0.75;
+}
+
+.team__prev {
+  transform: rotate(180deg);
+}
