@@ -1,0 +1,85 @@
+.promo {
+//  min-height: 100vh;
+  padding-top: 220px;
+  background-image: url(../img/images/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo__wrap {
+  position: relative;
+  height: 100%;
+  padding-bottom: 125px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 342px;
+    height: 628px;
+    background-image: url(../img/images/boy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.promo__text {
+  padding-left: 370px;
+  padding-right: 70px;
+  text-align: center;
+}
+
+.promo__top {
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 27px;
+  letter-spacing: 0.01em;
+}
+
+.promo__subtitle {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: "Arial Curive", "Arial", sans-serif;
+  letter-spacing: 0.01em;
+  font-size: 35px;
+  
+  span {
+    display: block;
+    font-size: 60px;
+  }
+}
+
+.promo__title {
+  margin-top: 30px;
+  color: #0254b6;
+  font-family: "Myriad Pro", "Arial", sans-serif;
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.promo__btn {
+  width: 540px;
+  height: 66px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial Curive", "Arial", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  color: #fbf8f8;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: rgb(22, 203, 228);
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: #119caf;
+    .transition();
+  }
+}
