@@ -13,13 +13,6 @@ $(window).scroll(function(){
   };
 });
 
-//$(".btn-top").click(function () {
-//  $("body,html").animate({
-//    scrollTop: 0
-//  }, 400);
-//  return false;
-//});
-
 //Scroll to menu anchor
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
@@ -59,3 +52,10 @@ function onScroll(event){
       }
   });
 };
+
+if (window.innerWidth < 1022) {
+  $('.menu__link').click(function() {
+    $('.menu__list').slideUp();
+    $('.menu').removeClass('menu--opened');
+  })
+}
